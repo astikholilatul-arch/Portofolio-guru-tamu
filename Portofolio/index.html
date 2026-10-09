@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kholilatul Asti — Portofolio Siswa RPL SMK Telkom Lampung</title>
+  <meta name="description" content="Portofolio resmi Kholilatul Asti: Siswa Rekayasa Perangkat Lunak (RPL) SMK Telkom Lampung. Junior Web Developer & Front-End Enthusiast." />
+  <meta name="author" content="Kholilatul Asti" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/asti.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&family=Sora:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Scroll Progress Indicator -->
+  <div id="scrollProgress"></div>
+
+  <!-- Ambient Glow Backgrounds -->
+  <div class="ambient-glow-wrapper" aria-hidden="true">
+    <div class="glow-blob glow-blob-1"></div>
+    <div class="glow-blob glow-blob-2"></div>
+    <div class="glow-blob glow-blob-3"></div>
+  </div>
+
+  <!-- ==================== HEADER & NAVBAR ==================== -->
+  <header id="siteHeader" class="navbar-header">
+    <div class="container nav-container">
+      <a href="#beranda" class="brand-box">
+        <div class="brand-mini-avatar">
+          <img src="assets/asti.png" alt="Asti" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Kholilatul+Asti&background=0284c7&color=fff&size=128';" />
+        </div>
+        <div>
+          <div class="brand-title">Kholilatul Asti</div>
+          <div class="brand-subtitle">SMK TELKOM LAMPUNG</div>
+        </div>
+      </a>
+
+      <!-- Floating Pill Menu -->
+      <nav aria-label="Navigasi Halaman">
+        <ul class="nav-pill-menu">
+          <li><a href="#beranda" class="nav-item-link active">Beranda</a></li>
+          <li><a href="#tentang" class="nav-item-link">Tentang</a></li>
+          <li><a href="#keahlian" class="nav-item-link">Keahlian</a></li>
+          <li><a href="#proyek" class="nav-item-link">Proyek</a></li>
+          <li><a href="#kontak" class="nav-item-link">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop Contact CTA & Mobile Toggle -->
+      <div style="display:flex; align-items:center; gap:12px;">
+        <a href="#kontak" class="btn-primary nav-btn-contact">
+          <span>Hubungi Saya</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+
+        <button type="button" id="hamburgerBtn" class="hamburger-btn" aria-label="Buka Menu Mobile">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobileNavPanel" class="mobile-nav-panel">
+    <a href="#beranda" class="mobile-nav-link">Beranda</a>
+    <a href="#tentang" class="mobile-nav-link">Tentang Saya</a>
+    <a href="#keahlian" class="mobile-nav-link">Keahlian & Teknologi</a>
+    <a href="#proyek" class="mobile-nav-link">Portofolio Proyek</a>
+    <a href="#kontak" class="mobile-nav-link">Kontak & WhatsApp</a>
+  </div>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="beranda" class="hero-section">
+      <div class="container hero-layout">
+        <!-- Kolom Teks -->
+        <div>
+          <!-- Badge Siswa -->
+          <div class="hero-main-badge">
+            <span class="badge-pill">
+              <span class="status-live-dot"></span>
+              <span>Junior Web Developer — SMK Telkom Lampung</span>
+            </span>
+          </div>
+
+          <h1 class="hero-headline">
+            Halo, saya <span class="text-shimmer">Kholilatul Asti</span>
+          </h1>
+
+          <div class="hero-typewriter-row">
+            <span>Fokus:</span>
+            <span id="typewriterText" style="color:var(--text-main);"></span>
+            <span class="typewriter-cursor"></span>
+          </div>
+
+          <p class="hero-description">
+            Siswa jurusan <strong>Rekayasa Perangkat Lunak (RPL) di SMK Telkom Lampung</strong> dengan minat mendalam pada pengembangan website modern, antarmuka yang bersih, cepat, dan responsif di berbagai perangkat.
+          </p>
+
+          <div class="hero-buttons-row">
+            <a href="#proyek" class="btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+              <span>Lihat Proyek</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#kontak" class="btn-secondary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              <span>Hubungi Saya</span>
+            </a>
+          </div>
+
+          <!-- Hero Stats Cards -->
+          <div class="hero-stats-row">
+            <div class="glass-card hero-stat-card">
+              <div class="stat-value">4+</div>
+              <div class="stat-name">Proyek Selesai</div>
+              <div class="stat-sub">Web & Sistem RPL</div>
+            </div>
+            <div class="glass-card hero-stat-card">
+              <div class="stat-value">2+</div>
+              <div class="stat-name">Tahun Belajar</div>
+              <div class="stat-sub">SMK Telkom Lampung</div>
+            </div>
+            <div class="glass-card hero-stat-card">
+              <div class="stat-value" style="color:var(--emerald);">100%</div>
+              <div class="stat-name">Komitmen</div>
+              <div class="stat-sub">Clean Code & Rapi</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kolom Avatar Lingkaran Rapi dengan Fallback onerror -->
+        <div class="hero-avatar-column">
+          <div class="hero-avatar-wrapper">
+            <!-- Decorative Outer Ring & Glow -->
+            <div class="hero-avatar-outer-ring"></div>
+            <div class="hero-avatar-glow"></div>
+
+            <!-- Avatar Image Circle -->
+            <div class="hero-avatar-circle">
+              <img 
+                id="profileAvatarImg"
+                src="assets/asti.png" 
+                alt="Foto Profil Kholilatul Asti" 
+                class="hero-avatar-img"
+                onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Kholilatul+Asti&background=0284c7&color=fff&size=512&font-size=0.33';"
+              />
+            </div>
+
+            <!-- Floating Badges -->
+            <div class="avatar-floating-badge badge-pos-top">
+              <span style="color:#f59e0b;">⚡</span>
+              <span>Smooth & Fast</span>
+            </div>
+            <div class="avatar-floating-badge badge-pos-bottom">
+              <span style="color:var(--primary);">✨</span>
+              <span>Front-End & UI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ME SECTION ==================== -->
+    <section id="tentang" class="section-padding about-section">
+      <div class="container">
+        <span class="section-tag">Tentang Saya</span>
+        <h2 class="section-title">Dedikasi Belajar & Minat di Dunia Koding</h2>
+        <p class="section-desc">Mengenal lebih dekat perjalanan saya sebagai siswi Rekayasa Perangkat Lunak di SMK Telkom Lampung.</p>
+
+        <div class="about-grid">
+          <!-- Narasi Minat Belajar -->
+          <div class="glass-card about-card-narrative">
+            <h3 class="narrative-title">
+              Membangun fondasi teknologi dari ruang kelas hingga karya nyata.
+            </h3>
+            <div class="narrative-text">
+              <p>
+                Saya adalah siswi jurusan <strong>Rekayasa Perangkat Lunak (RPL) di SMK Telkom Lampung</strong>. Ketertarikan saya pada dunia pemrograman bermula dari rasa ingin tahu bagaimana sebuah desain visual dapat dihidupkan melalui kode hingga dapat berinteraksi dengan pengguna secara langsung.
+              </p>
+              <p>
+                Selama masa belajar di SMK Telkom Lampung, fokus utama saya terpusat pada <span class="narrative-highlight">Front-End Web Development</span> dan perancangan antarmuka pengguna (UI/UX). Saya berpegang pada prinsip bahwa kode yang baik tidak hanya harus berjalan tanpa eror, tetapi juga harus mudah dirawat, efisien, dan memberikan pengalaman menyenangkan bagi pengunjung.
+              </p>
+              <p>
+                Saat ini, saya terus memperdalam ekosistem web modern (HTML5, CSS3, JavaScript ES6+, dan Node.js dasar) serta selalu bersemangat untuk menyambut kesempatan praktik kerja lapangan (PKL), magang industri, maupun kolaborasi proyek web lainnya.
+              </p>
+            </div>
+
+            <!-- 4 Keunggulan Mini -->
+            <div class="about-features-mini">
+              <div class="feature-mini-item">
+                <span style="color:var(--primary); font-size:18px;">📱</span>
+                <div class="feature-mini-title">Mobile-First</div>
+                <div class="feature-mini-desc">Tampilan pas di layar HP & laptop</div>
+              </div>
+              <div class="feature-mini-item">
+                <span style="color:var(--emerald); font-size:18px;">🧹</span>
+                <div class="feature-mini-title">Clean Code</div>
+                <div class="feature-mini-desc">Penulisan kode rapi & modular</div>
+              </div>
+              <div class="feature-mini-item">
+                <span style="color:var(--primary); font-size:18px;">🎨</span>
+                <div class="feature-mini-title">UI Estetik</div>
+                <div class="feature-mini-desc">Warna kontras & tipografi seimbang</div>
+              </div>
+              <div class="feature-mini-item">
+                <span style="color:var(--emerald); font-size:18px;">🚀</span>
+                <div class="feature-mini-title">Performa Cepat</div>
+                <div class="feature-mini-desc">Waktu muat halaman ringan</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ringkasan Profil Siswa -->
+          <div class="glass-card about-card-profile">
+            <div>
+              <div style="display:flex; align-items:center; gap:8px; color:var(--primary); margin-bottom:12px;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+                <span style="font-family:var(--font-mono); font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.15em;">Data Siswa</span>
+              </div>
+
+              <ul class="profile-info-list">
+                <li class="profile-info-row">
+                  <span class="profile-info-label">Nama Lengkap</span>
+                  <span class="profile-info-val">Kholilatul Asti</span>
+                </li>
+                <li class="profile-info-row">
+                  <span class="profile-info-label">Asal Sekolah</span>
+                  <span class="profile-info-val">SMK Telkom Lampung</span>
+                </li>
+                <li class="profile-info-row">
+                  <span class="profile-info-label">Konsentrasi Keahlian</span>
+                  <span class="profile-info-val">Rekayasa Perangkat Lunak (RPL)</span>
+                </li>
+                <li class="profile-info-row">
+                  <span class="profile-info-label">Role Utama</span>
+                  <span class="profile-info-val">Junior Web Developer</span>
+                </li>
+                <li class="profile-info-row">
+                  <span class="profile-info-label">Domisili</span>
+                  <span class="profile-info-val">Lampung, Indonesia 🇮🇩</span>
+                </li>
+                <li class="profile-info-row">
+                  <span class="profile-info-label">Status Ketersediaan</span>
+                  <span class="profile-info-val" style="color:var(--emerald); display:inline-flex; align-items:center; gap:6px;">
+                    <span class="status-live-dot"></span>
+                    Siap PKL & Magang
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <div style="margin-top:24px; padding:16px; border-radius:var(--radius-md); background:rgba(56,189,248,0.06); border:1px solid rgba(56,189,248,0.2); text-align:center;">
+              <p style="font-size:12px; color:var(--text-muted);">Mencari kandidat magang web developer?</p>
+              <a href="#kontak" style="font-size:12px; font-weight:700; color:var(--primary); display:inline-flex; align-items:center; gap:4px; margin-top:6px;">
+                <span>Diskusikan bersama saya</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section id="keahlian" class="section-padding skills-section">
+      <div class="container">
+        <span class="section-tag">Keahlian & Teknologi</span>
+        <h2 class="section-title">Perangkat Teknis yang Dikuasai</h2>
+        <p class="section-desc">Keterampilan bahasa pemrograman, tools desain, dan teknologi yang dipelajari dalam kurikulum RPL.</p>
+
+        <div class="skills-grid">
+          <!-- HTML5 -->
+          <div class="glass-card skill-card">
+            <div>
+              <div class="skill-card-top">
+                <div class="skill-icon-badge" style="color:#e34f26;">HTML</div>
+                <div>
+                  <h3 class="skill-title">HTML5</h3>
+                  <span class="skill-badge-level">Semantic & SEO</span>
+                </div>
+              </div>
+              <p class="skill-card-desc">Penyusunan kerangka web terstruktur, aksesibel, dan ramah mesin pencari (SEO).</p>
+            </div>
+            <div class="skill-progress-track">
+              <div class="skill-progress-bar" style="width: 95%;"></div>
+            </div>
+          </div>
+
+          <!-- CSS3 -->
+          <div class="glass-card skill-card">
+            <div>
+              <div class="skill-card-top">
+                <div class="skill-icon-badge" style="color:#38bdf8;">CSS</div>
+                <div>
+                  <h3 class="skill-title">CSS3 Modern</h3>
+                  <span class="skill-badge-level">Flexbox & Grid</span>
+                </div>
+              </div>
+              <p class="skill-card-desc">Styling responsif, animasi halus, efek dark mode glassmorphism, dan tata letak adaptif.</p>
+            </div>
+            <div class="skill-progress-track">
+              <div class="skill-progress-bar" style="width: 90%;"></div>
+            </div>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="glass-card skill-card">
+            <div>
+              <div class="skill-card-top">
+                <div class="skill-icon-badge" style="color:#f7df1e;">JS</div>
+                <div>
+                  <h3 class="skill-title">JavaScript</h3>
+                  <span class="skill-badge-level">ES6+ & DOM</span>
+                </div>
+              </div>
+              <p class="skill-card-desc">Logika interaktif, manipulasi elemen DOM, event listener, dan konsumsi REST API.</p>
+            </div>
+            <div class="skill-progress-track">
+              <div class="skill-progress-bar" style="width: 85%;"></div>
+            </div>
+          </div>
+
+          <!-- Git & GitHub -->
+          <div class="glass-card skill-card">
+            <div>
+              <div class="skill-card-top">
+                <div class="skill-icon-badge" style="color:#f05032;">GIT</div>
+                <div>
+                  <h3 class="skill-title">Git & GitHub</h3>
+                  <span class="skill-badge-level">Version Control</span>
+                </div>
+              </div>
+              <p class="skill-card-desc">Pengelolaan repositori kode, branching, commit teratur, dan deployment otomatis.</p>
+            </div>
+            <div class="skill-progress-track">
+              <div class="skill-progress-bar" style="width: 88%;"></div>
+            </div>
+          </div>
+
+          <!-- Node.js Dasar -->
+          <div class="glass-card skill-card">
+            <div>
+              <div class="skill-card-top">
+                <div class="skill-icon-badge" style="color:#22c55e;">NODE</div>
+                <div>
+                  <h3 class="skill-title">Node.js Dasar</h3>
+                  <span class="skill-badge-level">Runtime & NPM</span>
+                </div>
+              </div>
+              <p class="skill-card-desc">Pemahaman runtime JavaScript di sisi server, instalasi modul NPM, dan server dasar.</p>
+            </div>
+            <div class="skill-progress-track">
+              <div class="skill-progress-bar" style="width: 78%;"></div>
+            </div>
+          </div>
+
+          <!-- Tailwind CSS / Bootstrap -->
+          <div class="glass-card skill-card">
+            <div>
+              <div class="skill-card-top">
+                <div class="skill-icon-badge" style="color:#06b6d4;">UI</div>
+                <div>
+                  <h3 class="skill-title">Tailwind & Bootstrap</h3>
+                  <span class="skill-badge-level">CSS Frameworks</span>
+                </div>
+              </div>
+              <p class="skill-card-desc">Percepatan pembuatan antarmuka prototipe dengan komponen dan utility class siap pakai.</p>
+            </div>
+            <div class="skill-progress-track">
+              <div class="skill-progress-bar" style="width: 86%;"></div>
+            </div>
+          </div>
+
+          <!-- PHP & MySQL -->
+          <div class="glass-card skill-card">
+            <div>
+              <div class="skill-card-top">
+                <div class="skill-icon-badge" style="color:#818cf8;">PHP</div>
+                <div>
+                  <h3 class="skill-title">PHP & MySQL</h3>
+                  <span class="skill-badge-level">Backend RPL</span>
+                </div>
+              </div>
+              <p class="skill-card-desc">Pembuatan sistem CRUD dasar, relasi tabel database, dan validasi form dinamis.</p>
+            </div>
+            <div class="skill-progress-track">
+              <div class="skill-progress-bar" style="width: 82%;"></div>
+            </div>
+          </div>
+
+          <!-- Figma UI/UX -->
+          <div class="glass-card skill-card">
+            <div>
+              <div class="skill-card-top">
+                <div class="skill-icon-badge" style="color:#a855f7;">FIG</div>
+                <div>
+                  <h3 class="skill-title">Figma UI/UX</h3>
+                  <span class="skill-badge-level">Design & Mockup</span>
+                </div>
+              </div>
+              <p class="skill-card-desc">Wireframing, pembuatan palet warna, tipografi, dan prototipe web sebelum koding.</p>
+            </div>
+            <div class="skill-progress-track">
+              <div class="skill-progress-bar" style="width: 88%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section id="proyek" class="section-padding projects-section">
+      <div class="container">
+        <span class="section-tag">Portofolio Proyek</span>
+        <h2 class="section-title">Karya Nyata & Sistem Praktikum RPL</h2>
+        <p class="section-desc">Kumpulan proyek aplikasi web yang telah dibangun dengan fokus fungsionalitas dan kenyamanan pengguna.</p>
+
+        <div class="projects-grid">
+          <!-- Proyek 1: Sistem Rental KebayaJas -->
+          <article class="glass-card project-card">
+            <div>
+              <div class="project-header-row">
+                <span class="badge-pill">Web Katalog & Reservasi</span>
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--text-dim); font-weight:700;">PROYEK 01</span>
+              </div>
+
+              <h3 class="project-card-title">Sistem Rental KebayaJas</h3>
+              <p class="project-card-desc">
+                Platform web katalog dan pemesanan sewa busana adat tradisional, kebaya modern, serta setelan jas resmi. Memudahkan pelanggan melihat stok model yang tersedia, menghitung estimasi biaya sewa harian, dan melakukan booking langsung terhubung ke WhatsApp.
+              </p>
+
+              <ul class="project-features-list">
+                <li class="project-feat-item">
+                  <span>✔</span>
+                  <span>Katalog busana dengan filter kategori & ukuran</span>
+                </li>
+                <li class="project-feat-item">
+                  <span>✔</span>
+                  <span>Kalkulator estimasi biaya sewa harian otomatis</span>
+                </li>
+                <li class="project-feat-item">
+                  <span>✔</span>
+                  <span>Formulir pemesanan langsung terintegrasi WhatsApp</span>
+                </li>
+              </ul>
+
+              <div class="project-tech-tags">
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS3</span>
+                <span class="project-tag">JavaScript ES6+</span>
+                <span class="project-tag">WhatsApp API</span>
+              </div>
+            </div>
+
+            <div class="project-actions-row">
+              <a href="#kontak" class="btn-primary" style="padding:10px 20px; font-size:13px;">
+                <span>Tanya Detail Proyek</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Proyek 2: Sistem Peminjaman Sarpras Lab RPL -->
+          <article class="glass-card project-card">
+            <div>
+              <div class="project-header-row">
+                <span class="badge-pill badge-emerald">Manajemen Sarpras Sekolah</span>
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--text-dim); font-weight:700;">PROYEK 02</span>
+              </div>
+
+              <h3 class="project-card-title">Sistem Peminjaman Sarpras Lab RPL</h3>
+              <p class="project-card-desc">
+                Aplikasi pencatatan dan pengelolaan peminjaman fasilitas laboratorium jurusan RPL SMK Telkom Lampung (laptop praktikum, mikrokontroler, proyektor, kabel tester). Mengurangi risiko barang hilang dan memudahkan asisten lab mendata sirkulasi barang.
+              </p>
+
+              <ul class="project-features-list">
+                <li class="project-feat-item">
+                  <span>✔</span>
+                  <span>Dashboard stok & status ketersediaan alat lab</span>
+                </li>
+                <li class="project-feat-item">
+                  <span>✔</span>
+                  <span>Pencatatan data siswa & tenggat waktu pengembalian</span>
+                </li>
+                <li class="project-feat-item">
+                  <span>✔</span>
+                  <span>Tampilan status badge otomatis (Tersedia / Dipinjam)</span>
+                </li>
+              </ul>
+
+              <div class="project-tech-tags">
+                <span class="project-tag">PHP</span>
+                <span class="project-tag">MySQL</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">Bootstrap 5</span>
+              </div>
+            </div>
+
+            <div class="project-actions-row">
+              <a href="#kontak" class="btn-primary" style="padding:10px 20px; font-size:13px;">
+                <span>Tanya Detail Proyek</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Proyek 3: Eksplor Lampung Bahari -->
+          <article class="glass-card project-card">
+            <div>
+              <div class="project-header-row">
+                <span class="badge-pill">Portal Wisata & GIS</span>
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--text-dim); font-weight:700;">PROYEK 03</span>
+              </div>
+
+              <h3 class="project-card-title">Eksplor Lampung Bahari</h3>
+              <p class="project-card-desc">
+                Portal informasi destinasi wisata pesisir dan pantai eksotis Lampung (Teluk Kiluan, Pulau Pahawang, Gigi Hiu). Dilengkapi fitur peta interaktif Leaflet.js, tips keselamatan berenang, dan rekomendasi pemandu lokal.
+              </p>
+
+              <ul class="project-features-list">
+                <li class="project-feat-item">
+                  <span>✔</span>
+                  <span>Peta interaktif titik koordinat destinasi bahari</span>
+                </li>
+                <li class="project-feat-item">
+                  <span>✔</span>
+                  <span>Kalkulator estimasi biaya liburan per orang</span>
+                </li>
+                <li class="project-feat-item">
+                  <span>✔</span>
+                  <span>100% responsif & cepat diakses lewat smartphone</span>
+                </li>
+              </ul>
+
+              <div class="project-tech-tags">
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS3</span>
+                <span class="project-tag">Leaflet.js</span>
+                <span class="project-tag">Vercel</span>
+              </div>
+            </div>
+
+            <div class="project-actions-row">
+              <a href="https://sea-blue-portfolio-pwhk.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding:10px 20px; font-size:13px;">
+                <span>Kunjungi Website</span>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Proyek 4: EduQuiz Koding RPL -->
+          <article class="glass-card project-card">
+            <div>
+              <div class="project-header-row">
+                <span class="badge-pill badge-emerald">E-Learning Siswa</span>
+                <span style="font-family:var(--font-mono); font-size:12px; color:var(--text-dim); font-weight:700;">PROYEK 04</span>
+              </div>
+
+              <h3 class="project-card-title">EduQuiz Koding RPL</h3>
+              <p class="project-card-desc">
+                Platform latihan kuis pemrograman web dasar untuk siswa kelas 10 dan 11 RPL. Menyediakan soal pilihan ganda interaktif, batas waktu pengerjaan, skor instan, dan pembahasan logika kode.
+              </p>
+
+              <ul class="project-features-list">
+                <li class="project-feat-item">
+                  <span>✔</span>
+                  <span>Timer kuis dinamis dengan hitung mundur</span>
+                </li>
+                <li class="project-feat-item">
+                  <span>✔</span>
+                  <span>Kalkulasi nilai dan feedback jawaban otomatis</span>
+                </li>
+                <li class="project-feat-item">
+                  <span>✔</span>
+                  <span>Penyimpanan skor tertinggi di LocalStorage</span>
+                </li>
+              </ul>
+
+              <div class="project-tech-tags">
+                <span class="project-tag">JavaScript ES6+</span>
+                <span class="project-tag">CSS Grid</span>
+                <span class="project-tag">LocalStorage</span>
+              </div>
+            </div>
+
+            <div class="project-actions-row">
+              <a href="#kontak" class="btn-primary" style="padding:10px 20px; font-size:13px;">
+                <span>Tanya Detail Proyek</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="kontak" class="section-padding contact-section">
+      <div class="container">
+        <span class="section-tag">Kontak & Kolaborasi</span>
+        <h2 class="section-title">Mari Terhubung & Mulai Diskusi</h2>
+        <p class="section-desc">Pintu komunikasi selalu terbuka untuk tawaran Praktik Kerja Lapangan (PKL), magang industri, atau proyek web.</p>
+
+        <div class="contact-grid">
+          <!-- Kolom Sosial Media & Email -->
+          <div class="glass-card contact-info-card">
+            <div>
+              <h3 style="font-size:20px; font-weight:800; margin-bottom:10px;">Saluran Komunikasi Aktif</h3>
+              <p style="font-size:14px; color:var(--text-muted); line-height:1.7;">
+                Anda dapat menghubungi saya langsung melalui saluran sosial media di bawah atau mengisi form pesan cepat untuk terhubung ke WhatsApp.
+              </p>
+
+              <!-- Tombol Salin Email Cepat -->
+              <div style="margin-top:20px; padding:14px; border-radius:var(--radius-md); background:rgba(56,189,248,0.08); border:1px solid rgba(56,189,248,0.25); display:flex; align-items:center; justify-content:space-between; gap:10px;">
+                <div>
+                  <div style="font-family:var(--font-mono); font-size:10px; color:var(--primary); text-transform:uppercase;">Email Resmi</div>
+                  <div style="font-family:var(--font-mono); font-size:13px; font-weight:700; color:var(--text-main); margin-top:2px;">kholilatulasti@gmail.com</div>
+                </div>
+                <button type="button" id="copyEmailBtn" class="btn-secondary" style="padding:6px 14px; font-size:12px;">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  <span>Salin</span>
+                </button>
+              </div>
+
+              <!-- List Tautan Sosial Media -->
+              <ul class="contact-socials-list">
+                <!-- WhatsApp -->
+                <li>
+                  <a href="https://wa.me/6285783665905" target="_blank" rel="noopener noreferrer" class="social-link-item">
+                    <div style="display:flex; align-items:center; gap:12px;">
+                      <span style="font-size:22px;">💬</span>
+                      <div>
+                        <div class="social-name">WhatsApp</div>
+                        <div class="social-handle" style="color:#34d399;">0857-8366-5905</div>
+                      </div>
+                    </div>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+                  </a>
+                </li>
+
+                <!-- GitHub -->
+                <li>
+                  <a href="https://github.com/kholilatulasti" target="_blank" rel="noopener noreferrer" class="social-link-item">
+                    <div style="display:flex; align-items:center; gap:12px;">
+                      <span style="font-size:22px;">🐙</span>
+                      <div>
+                        <div class="social-name">GitHub</div>
+                        <div class="social-handle">github.com/kholilatulasti</div>
+                      </div>
+                    </div>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+                  </a>
+                </li>
+
+                <!-- LinkedIn -->
+                <li>
+                  <a href="https://linkedin.com/in/kholilatulasti" target="_blank" rel="noopener noreferrer" class="social-link-item">
+                    <div style="display:flex; align-items:center; gap:12px;">
+                      <span style="font-size:22px;">💼</span>
+                      <div>
+                        <div class="social-name">LinkedIn</div>
+                        <div class="social-handle">linkedin.com/in/kholilatulasti</div>
+                      </div>
+                    </div>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+                  </a>
+                </li>
+
+                <!-- Instagram -->
+                <li>
+                  <a href="https://instagram.com/kholilatulasti" target="_blank" rel="noopener noreferrer" class="social-link-item">
+                    <div style="display:flex; align-items:center; gap:12px;">
+                      <span style="font-size:22px;">📸</span>
+                      <div>
+                        <div class="social-name">Instagram</div>
+                        <div class="social-handle">@kholilatulasti</div>
+                      </div>
+                    </div>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div style="display:flex; align-items:center; gap:8px; margin-top:20px; font-size:12px; color:var(--text-muted);">
+              <span class="status-live-dot"></span>
+              <span>Waktu respon rata-rata: &lt; 24 jam</span>
+            </div>
+          </div>
+
+          <!-- Kolom Form Pesan Langsung ke WhatsApp -->
+          <div class="glass-card contact-form-card">
+            <h3 style="font-size:20px; font-weight:800; color:var(--text-main);">Kirim Pesan WhatsApp Langsung</h3>
+            <p style="font-size:13px; color:var(--text-muted); margin-top:4px;">
+              Isi formulir di bawah ini untuk memulai chat WhatsApp dengan format pesan otomatis.
+            </p>
+
+            <form id="whatsappForm" class="contact-form">
+              <div class="form-group">
+                <label for="senderName" class="form-label">Nama Anda</label>
+                <input type="text" id="senderName" class="form-input" placeholder="Contoh: Budi Santoso" required />
+              </div>
+
+              <div class="form-group">
+                <label for="senderSubject" class="form-label">Subjek / Keperluan</label>
+                <input type="text" id="senderSubject" class="form-input" placeholder="Contoh: Tawaran PKL / Pembuatan Web Landing Page" required />
+              </div>
+
+              <div class="form-group">
+                <label for="senderMessage" class="form-label">Isi Pesan</label>
+                <textarea id="senderMessage" class="form-input" rows="4" placeholder="Tuliskan rencana proyek, tanggal mulai magang, atau pertanyaan Anda..." required style="resize:none;"></textarea>
+              </div>
+
+              <button type="submit" class="btn-emerald">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                </svg>
+                <span>Kirim via WhatsApp</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-content-row">
+      <div>
+        <p>Copyright © 2026 <strong>Kholilatul Asti</strong> - SMK Telkom Lampung. All rights reserved.</p>
+        <p style="font-size:11px; color:var(--text-dim); margin-top:4px;">Jurusan Rekayasa Perangkat Lunak (RPL) — Front-End Web Development</p>
+      </div>
+
+      <div style="display:flex; align-items:center; gap:16px;">
+        <span class="badge-pill">HTML5 • CSS3 • JS</span>
+        <a href="#beranda" style="font-size:12px; color:var(--primary); font-weight:700; display:inline-flex; align-items:center; gap:4px;">
+          <span>Ke Atas</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notice Element -->
+  <div id="toastNotice" class="toast-notice">Tersalin!</div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
